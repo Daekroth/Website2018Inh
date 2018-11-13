@@ -1,0 +1,229 @@
+header {
+background-image : url("../img/companylogoBG.jpg");
+background-size : 768px;
+background-repeat : no-repeat;
+background-position : center;
+width : 768px;
+height : 115px;
+}
+@font-face {
+font-family : '"Colaborate-bold"';
+src : url("../Fonts/ColabBol.otf");
+}
+@font-face {
+font-family : '"abeatbyKai"';
+src : url("../Fonts/abeatbyKaiRegular.otf");
+}
+@font-face {
+font-family : '"Blueline_Paradise"';
+src : url("../Fonts/BluelineParadise.ttf");
+}
+/*sets the video background to the desired position*/
+#background {
+position : fixed;
+left : -50%;
+bottom : -55%;
+min-width : 100%;
+min-height : 100%;
+z-index : -100;
+}
+/* Header/Pagetitle A allows me to use an interactive header & responsive title that returns the person to root */
+.header {
+font-family : "abeatbyKai", serif;
+color : white;
+z-index : 64;
+overflow : hidden;
+background-color : rgb(58, 45, 45);
+padding : 1px 0.5px;
+}
+.header a {
+float : left;
+color : white;
+padding : 2px;
+text-decoration : none;
+font-size : 18px;
+line-height : 25px;
+border-radius : 4px;
+}
+.header a:hover {
+background-color : #ddd;
+color : white;
+}
+.pagetitle {
+height : 125px;
+width : 725px;
+font-size : 6em;
+font-weight : normal;
+font-family : "Blueline Paradise", serif;
+line-height : 1.2;
+z-index : 58;
+margin : 0;
+position : relative;
+top : -1%;
+}
+.pagetitle a {
+font-size : 1em;
+top : 45%;
+width : 100%;
+position : relative;
+text-align : center;
+color : #fffbdc;
+white-space : nowrap;
+}
+.pagetitle a:hover {
+background-color : transparent;
+}
+.index {
+position : relative;
+left : 30%;
+margin : 5px;
+}
+.product {
+position : relative;
+left : 35%;
+margin : 5px;
+}
+.blog {
+position : relative;
+left : 40%;
+margin : 5px;
+}
+/* Box is used to group content. Was chosen over "body" due to not being able to get the same styling results (background not showing)*/
+.box {
+position : relative;
+float : left;
+left : 30%;
+text-align : center;
+background-color : rgb(220, 220, 220);
+height : 64em;
+width : 768px;
+}
+.prodCatalog {
+position : relative;
+font-family : abeatbyKai, serif;
+font-size : 2em;
+color : white;
+text-shadow : 2px 2px #000000;
+background-color : rgb(0, 112, 177);
+padding : 20px;
+padding-bottom : 30px;
+margin-bottom : -15px;
+top : -25px;
+}
+img {
+position : relative;
+margin : 5px;
+}
+.footer {
+background-color : black;
+width : 100%;
+height : 25px;
+bottom : 5px;
+color : white;
+position : relative;
+z-index : 101;
+}
+.footertext {
+position : relative;
+top : 5px;
+font-family : "Colaborate-bold";
+}
+/*color is changed to prevent the basic purple href color from showing up*/
+.footertext a {
+color : rgb(255, 255, 255);
+}
+/*scaling & repositioning content for tablet use*/
+@media screen and (max-width:768px) {
+.box {
+position : relative;
+float : left;
+left : -3%;
+text-align : center;
+height : 87em;
+}
+img {
+position : relative;
+margin : 3em;
+margin-bottom : 0.5em;
+margin-top : -0.2em;
+transform : scale(1.4,1);
+}
+}
+/*further scaling & repositioning for handheld usage*/
+@media screen and (max-width:320px) {
+header {
+background-size : 320px;
+background-repeat : no-repeat;
+background-position : center;
+width : 320px;
+height : 65px;
+top : 30px;
+}
+img {
+position : relative;
+transform : scale(1);
+}
+.header {
+color : white;
+z-index : 64;
+overflow : hidden;
+padding-bottom : 25px;
+}
+.header a {
+float : left;
+color : black;
+padding : 2px;
+width : 30px;
+text-decoration : none;
+font-size : 0.2em;
+line-height : 5px;
+border-radius : 4px;
+background-color : #fff;
+}
+.index {
+position : relative;
+top : 9%;
+left : 0%;
+}
+.product {
+position : relative;
+top : 26%;
+left : -13.75%;
+}
+.blog {
+position : relative;
+top : 43%;
+left : -27.5%;
+margin : 5px;
+}
+.pagetitle {
+width : 600px;
+height : 58px;
+position : relative;
+white-space : nowrap;
+}
+.pagetitle a {
+left : 7.5%;
+top : 65%;
+position : relative;
+color : #fffbdc;
+transform : scale(2.75);
+background-color : transparent;
+}
+.article {
+height : 900px;
+}
+.box {
+position : relative;
+float : left;
+left : -3%;
+width : 320px;
+text-align : center;
+border : 1px;
+height : 150em;
+}
+.footer {
+position : relative;
+top : 1350px;
+}
+}

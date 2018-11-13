@@ -1,0 +1,4 @@
+Sitemap: http://www.domain.com/sitemap-index.xml
+
+User-agent: * 
+Disallow: /inholland

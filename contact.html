@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<Title>Product</Title>
+<meta name="product" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/stylesheet3.css" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+<meta charset = "utf-8" >
+<meta name="keywords" content="HTML,CSS,XML,CompanyName,Games">
+<meta name="author" content="Kyrill Sazonov">
+<style>
+</style>
+</head>
+<body>
+
+<!--section indicates responsive Header, with title refering back to root-->
+<section class="header">
+<header>
+
+<h1 class="pagetitle"><a href="index.html" title="CompanyName Homepage">COMPANY NAME</a></h1>
+	<a class="index" href="index.html" title="CompanyName Homepage">Home</a>
+    <a class="product" href="product.html" title="CompanyName Product Catalog">Product</a>
+    <a class="blog" href="http://www.blogger.com" title="CompanyName Official Blog">Blog</a>
+</header>
+</section>
+
+<!--Allows the video to play on the background without any sound or controls-->
+<video autoplay muted loop id="background">
+  <source src="movie/background.mp4" type="video/mp4">
+</video>
+
+<!--box section groups the entire section + the form creator//-->
+<section class="box">
+<h2 class="subtitle">Contact</h2>
+<article class="article">
+<h2 class="subtitle2"> More information </h2>
+<form action="nowhere.php" method="post">
+	<fieldset >
+		<label >Select topic</label>
+		<select>
+			<option value="general">General inquiries</option>
+			<option value="press">Press relations</option>
+			<option value="recruitement">Recruitment</option>
+		</select>
+	</fieldset>
+	<fieldset class="contactFormFieldset">
+		<input
+				type="text"
+				name="contactFormName"
+				placeholder="Your name.."
+		/>
+	</fieldset>
+	<fieldset class="contactFormFieldset">
+		<input
+				type="email"
+				name="email"
+				placeholder="Your email.."
+		/>
+	</fieldset>
+	<fieldset >
+		<textarea
+				rows="7"
+				cols="40"
+				name="message"
+				placeholder="Write something.."
+		></textarea>
+	</fieldset >
+	<input class="submit"
+			type="submit"
+			value="Submit"
+	/>
+</form>
+</article>
+<!--footer wtih functioning link to contact-->
+<footer class="footer">
+<p class="footertext"><a href="contact.html">	2018 - Kyrill Sazonov - Inholland </a></p>
+</footer>
+</section>
+</body>
+</html>
